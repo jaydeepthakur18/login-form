@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div id="firstdiv">
+      <img id="logo" src="./logo.png" alt="Logo" class="logo">
+      <div id="heading">
+        <h1>Student Registration Form</h1>
+        <p>Fill out the form to apply for the training courses. You can consider your application accepted after you receive a confirmation email.</p>
+      </div>
+    </div>
+
+    <div id="formdive">
+    <form id="studentForm">
+        <h3>Student Information</h3>
+          <input id="name" name="name"  type="text" placeholder="First Name" required>
+          <input id="middle" name="middle" type="text" placeholder="Middle Name">
+          <input id="lastName" name="lastName" type="text" placeholder="Last Name" required>
+          <br>
+          <br>
+    
+          <input id="DOB" name="DOB" type="date" placeholder="Date of Birth" required>
+          <input id="number" name="number" type="number" placeholder="student Id">
+
+      
+        <h3>Address</h3>
+        <input id="address" type="text" placeholder="Street Address" class="full-width">
+        <br>
+        <br>
+
+
+          <input id="city" name="city" type="text" placeholder="City">
+          <input id="state" name="state" type="text" placeholder="State / Province">
+        <br>
+        <br>
+          <input id="country" name="country" type="text" placeholder="Country">
+          <input id="ZIP" name="ZIP" type="text" placeholder="ZIP Code">
+
+      <h3>contact Information </h3>
+          <input id="email" name="email" type="email" placeholder="E-mail" class="full-width">
+    
+        <h3>course <sub style="color: blueviolet;">*</sub></h3>
+        <div id="coursediv">
+
+        <button>+ add new record</button>
+        <br>
+        <br>
+        <div id="btndiv">
+          <input id="course" name="course" list="courseList"  placeholder="course">
+
+          <datalist id="courseList">
+            <option value="B Teach"></option>
+            <option value="M Teach"></option>
+            <option value="BCA"></option>
+            <option value="MSC"></option>
+            <option value="BA"></option>
+            <option value="MA"></option>
+            </datalist>
+ 
+            <input id="language" list="languageList" name="language" placeholder="language">
+
+            <datalist id="languageList">
+             <option value="c++"></option>
+             <option value="html"></option>
+             <option value="css"></option>
+             <option value="javascript"></option>
+             <option value="paython"></option>
+             <option value="oopm"></option>
+            </datalist>
+             
+            <input id="level" type="level" placeholder="level">
+            <input id="startDate" name="startDate" type="text" placeholder="start Date">
+        </div>
+        </div>
+            <br>
+            <br>
+            <textarea id="comment" name="comments" placeholder="comments" rows="10" cols="200"></textarea>
+            <br>
+            <br>
+  
+            <button id="register">Register</button>
+            <marquee><h1>please fill this form </h1></marquee>
+          </form>
+         </div>
+         </div>
+
+         <div id="table-section">
+          <table>
+            <thead>
+              <tr>
+                <th>student name</th>
+                <th>number</th>
+                <th>city</th>
+                <th>address</th>
+                <th>DOB</th>
+                <th>course</th>
+                <th>language</th>
+                <th>start date</th>
+
+              </tr>
+            </thead>
+            <tbody id="table-body">
+              <tr>
+                <td>jaydeep thakur</td>
+                <td>9926818464</td>
+                <td>indore</td>
+                <td>khandva naka</td>
+                <td>02/01/2000</td>
+                <td>b teach</td>
+                <td>javascript</td>
+                <td>1 1 2025</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+  <script src="script.js"></script>
+</body>
+</html>

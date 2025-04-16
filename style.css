@@ -1,0 +1,89 @@
+.container{
+  border: 2px solid grey;
+  margin: 1px 5px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+#firstdiv{
+  /*border:2px solid rgb(18, 16, 16);*/
+  height: 150px;
+  width: 100%;
+  display: flex;
+}
+#logo{
+  /*border: 2px solid red;*/
+  border-radius: 50%;
+  height: 77px;
+  width: 101px;
+  margin: 22px 52px;
+  padding: 15px 15px;
+  text-align: center;
+  font-size: 25px;
+  background-color: blueviolet;
+  color: whitesmoke;  
+}
+
+#heading{
+  /*border:2px solid green;*/
+  width: 100%;
+} 
+#formdiv{
+  border:2px solid rgb(102, 98, 98);
+  height: max-content;
+  width: 90%;
+  margin-left: 40px;
+  padding: 13px 13px;
+} 
+#coursediv{
+  border: 2px solid darkorchid;
+  background-color: salmon; 
+  margin: 3px; 
+  padding: 2px;
+}
+#btndiv{
+  border: 2px solid blueviolet;
+}
+.btn{
+  /*border: 2px solid rgb(191, 12, 12);*/
+  margin:5px 15px;
+  padding: 5px 10px;
+}
+#register{
+  width: 100%;
+  background-color: rebeccapurple;
+  color: white;
+  font-size: large;
+  margin-bottom: 2%;
+}
+#register:hover{
+  color: black;
+  cursor: pointer;
+  background-color: green;
+}
+input[type=text] ,input[type=date],input[type=number],input[type=email]{
+  width: 30%;
+  height: 25px;
+  padding: 3px;
+  margin: 4px;
+}
+#add{
+  width: 90%;
+}
+#date{
+width: 15%;  
+height: 12px; 
+}
+
+
+/* -------------table css-------------- */
+table,th,td{
+  width: 90vw;
+  margin: auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td,th{
+  padding: 8px;
+  text-align: center;
+}
